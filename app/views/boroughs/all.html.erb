@@ -1,0 +1,14 @@
+<h1>All boroughs: </h1>
+
+<ul>
+  <% @boroughs.each do |borough| %>
+    <li>
+      <%= link_to borough.title, borough_subways_path(borough) %>
+    </br>
+    </li>
+  <% end %>
+</ul>
+
+<%=link_to "Add ing", new_subway_path%>
+</br>
+<%= link_to 'Back to all boroughs', boroughs_path%>

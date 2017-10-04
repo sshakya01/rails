@@ -1,0 +1,6 @@
+<div class="container">
+  <h1>Hello! This is the borough you requested: <span><%= @borough.name %></span> </h1>
+<%= link_to("Edit!", edit_borough_path) %>
+</br>
+<%= link_to("Delete!", borough_path(@borough), method: :delete, data:{confirm: 'Are you sure?'}) %>
+</div>

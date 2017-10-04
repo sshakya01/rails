@@ -7,6 +7,6 @@ class CreateSubways < ActiveRecord::Migration[5.1]
       t.timestamps
     end
 
-    add_index :subways, :teacher_id
+    add_index :subways, :borough_id
   end
 end

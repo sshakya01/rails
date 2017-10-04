@@ -1,0 +1,12 @@
+<h2> Boroughs for: <%= @boroughs.name %> </h2>
+  <% if @boroughs.count > 0 %>
+    <ul>
+      <% @boroughs.each do |b| %>
+        <li>
+        <%= link_to b.name, borough_path(b) %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    We currently don't have boroughs for this subway :
+  <% end %>
