@@ -1,0 +1,13 @@
+<h2>All Subways: </h2>
+
+<ul>
+  <% @subways.each do |ing| %>
+    <li>
+      <%= ing.name %>
+    </br>
+    </li>
+  <% end %>
+</ul>
+
+</br>
+<%= link_to 'Go to all borough', boroughs_path%>

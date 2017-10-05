@@ -1,0 +1,15 @@
+<h2>Borough: <%= @borough.name %></h2>
+
+<h3> Subways: </h3>
+<ul>
+  <% @subways.each do |subway| %>
+    <li>
+      Lines: <%= subway.name %><br>
+      ID: <%= subway.borough_id %>
+
+    </li>
+  <% end %>
+</ul>
+<%= @borough.name%>
+
+<%= link_to 'Back to ALL borough', boroughs_path %>
